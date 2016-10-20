@@ -1,0 +1,38 @@
+import java.util.HashMap;
+public class Grades{
+  String name;
+  int age;
+
+  public Grades(String Name, int Age){
+    name = Name;
+    age = Age;
+  }
+  public static void main(String[] args) {
+    HashMap<String, Integer> grades = new HashMap<String, Integer>();
+
+    grades.put("Freshman English", 95);
+    grades.put("Band", 100);
+    grades.put("World Cultures", 85);
+    grades.put("Geometry", 92);
+    grades.put("Physical Science", 80);
+    grades.put("German II", 88);
+    grades.put("Gym", 100);
+    grades.put("Health", 95);
+    grades.put("British Literature", 82);
+    grades.put("Algebra II", 90);
+    grades.put("Trigonometry", 97);
+    grades.put("German III", 88);
+    grades.put("Ancient World", 92);
+    grades.put("Biology", 95);
+    System.out.println("William Alber");
+    System.out.println("2018");
+    System.out.println("");
+    System.out.println("Academic Record");
+    System.out.println("");
+    System.out.println("Grades 9 and 10");
+    System.out.println(grades);
+    System.out.println("");
+    System.out.println("Your GPA is 3.77");
+
+  }
+}
