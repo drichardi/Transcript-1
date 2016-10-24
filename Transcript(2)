@@ -2,35 +2,53 @@ import java.util.HashMap;
 public class Grades{
   String name;
   int age;
+  String address;
+  String phoneNumber;
 
-  public Grades(String Name, int Age){
+  public Grades(String Name, int Age, String Address, String PhoneNumber){
     name = Name;
     age = Age;
+    address = Address;
+    phoneNumber = PhoneNumber;
   }
   public static void main(String[] args) {
-    HashMap<String, Integer> grades = new HashMap<String, Integer>();
+    HashMap<String, Integer> gradesFreshman = new HashMap<String, Integer>();
+    HashMap<String, Integer> gradesSophomore = new HashMap<String, Integer>();
+    gradesFreshman.put("Freshman English", 95);
+    gradesFreshman.put("Band", 100);
+    gradesFreshman.put("World Cultures", 85);
+    gradesFreshman.put("Geometry", 92);
+    gradesFreshman.put("Physical Science", 80);
+    gradesFreshman.put("German II", 88);
+    gradesFreshman.put("Gym", 100);
+    gradesFreshman.put("Health", 95);
+    gradesSophomore.put("British Literature", 82);
+    gradesSophomore.put("Algebra II", 90);
+    gradesSophomore.put("Trigonometry", 97);
+    gradesSophomore.put("German III", 88);
+    gradesSophomore.put("Ancient World", 92);
+    gradesSophomore.put("Biology", 95);
 
-    grades.put("Freshman English", 95);
-    grades.put("Band", 100);
-    grades.put("World Cultures", 85);
-    grades.put("Geometry", 92);
-    grades.put("Physical Science", 80);
-    grades.put("German II", 88);
-    grades.put("Gym", 100);
-    grades.put("Health", 95);
-    grades.put("British Literature", 82);
-    grades.put("Algebra II", 90);
-    grades.put("Trigonometry", 97);
-    grades.put("German III", 88);
-    grades.put("Ancient World", 92);
-    grades.put("Biology", 95);
-    System.out.println("William Alber");
-    System.out.println("2018");
+    Grades willie = new Grades("Willie Alber", 16, "259 Echo Acres Road", "(603)555-4945");
+    Grades kennett = new Grades("Kennett High School", 1923, "409 Eagles Way", "(603)356-4343");
+
+    System.out.println(willie.name + ", " + willie.age + " years old.");
+    System.out.println(willie.address);
+    System.out.println(willie.phoneNumber);
     System.out.println("");
+
+    System.out.println(kennett.name + ", " + kennett.age);
+    System.out.println(kennett.address);
+    System.out.println(kennett.phoneNumber);
+    System.out.println("");
+
     System.out.println("Academic Record");
     System.out.println("");
-    System.out.println("Grades 9 and 10");
-    System.out.println(grades);
+    System.out.println("FreshmanYear");
+    System.out.println(gradesFreshman);
+    System.out.println("");
+    System.out.println("Sophomore Year");
+    System.out.println(gradesSophomore);
     System.out.println("");
     System.out.println("Your GPA is 3.77");
 
