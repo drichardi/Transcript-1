@@ -44,13 +44,13 @@ public class Grades{
 
     System.out.println("Academic Record");
     System.out.println("");
-    System.out.println("FreshmanYear");
+    System.out.println("Freshman Year");
     System.out.println(gradesFreshman);
     System.out.println("");
     System.out.println("Sophomore Year");
     System.out.println(gradesSophomore);
     System.out.println("");
-    System.out.println("Your GPA is 3.77");
+    System.out.println("GPA: 3.77");
 
   }
 }
