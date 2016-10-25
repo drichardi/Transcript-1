@@ -14,6 +14,7 @@ public class Grades{
   public static void main(String[] args) {
     HashMap<String, Integer> gradesFreshman = new HashMap<String, Integer>();
     HashMap<String, Integer> gradesSophomore = new HashMap<String, Integer>();
+    HashMap<String, Integer> gradesJunior = new HashMap<String, Integer>();
     gradesFreshman.put("Freshman English", 95);
     gradesFreshman.put("Band", 100);
     gradesFreshman.put("World Cultures", 85);
@@ -28,6 +29,11 @@ public class Grades{
     gradesSophomore.put("German III", 88);
     gradesSophomore.put("Ancient World", 92);
     gradesSophomore.put("Biology", 95);
+    gradesJunior.put("Programming II", 92);
+    gradesJunior.put("PreCalculus", 89);
+    gradesJunior.put("Chemistry", 92);
+    gradesJunior.put("English Composition", 88);
+    gradesJunior.put("German IV", 94);
 
     Grades willie = new Grades("Willie Alber", 16, "259 Echo Acres Road", "(603)555-4945");
     Grades kennett = new Grades("Kennett High School", 1923, "409 Eagles Way", "(603)356-4343");
@@ -49,6 +55,9 @@ public class Grades{
     System.out.println("");
     System.out.println("Sophomore Year");
     System.out.println(gradesSophomore);
+    System.out.println("");
+    System.out.println("Junior Year Q1");
+    System.out.println(gradesJunior);
     System.out.println("");
     System.out.println("GPA: 3.77");
 
