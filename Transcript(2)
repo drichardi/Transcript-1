@@ -15,6 +15,12 @@ public class Grades{
     HashMap<String, Integer> gradesFreshman = new HashMap<String, Integer>();
     HashMap<String, Integer> gradesSophomore = new HashMap<String, Integer>();
     HashMap<String, Integer> gradesJunior = new HashMap<String, Integer>();
+    
+    //TEST FEEDBACK
+    HashMap<Course, Integer> gradesSenior = new HashMap<Course, Integer>();
+    gradesSenior.put(new Course("English 12", 1.0f), 100);
+    
+    
     gradesFreshman.put("Freshman English", 95);
     gradesFreshman.put("Band", 100);
     gradesFreshman.put("World Cultures", 85);
@@ -63,3 +69,15 @@ public class Grades{
 
   }
 }
+class Course 
+{
+  String name;
+  float credits;
+  
+  public Course(String name, float credits)
+  {
+    this.name = name;
+    this.credits = credits;
+  }
+}
+    
